@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum FailedType: String, Codable {
+enum FailedType: String, Decodable {
     case unavailable = "REFERENCE_UNAVAILABLE"
     case validationFailed = "VALIDATION_ERROR"
     case notFound = "COIN_NOT_FOUND"

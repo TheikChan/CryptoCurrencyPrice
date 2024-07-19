@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CoinResponse: Decodable, Hashable {
+struct CoinResponse: Decodable {
     
     var uuid: String?
     var symbol: String?
