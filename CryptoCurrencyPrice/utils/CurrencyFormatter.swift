@@ -46,7 +46,7 @@ class CurrencyFormatter {
             let trillions = number / 1_000_000_000
             return "\(formattedPrice(trillions, maxDigit: 2, numberStyle: numberStyle)) million"
         }else {
-            return "\(number)"
+            return "\(formattedPrice(number, maxDigit: 2, numberStyle: numberStyle))"
         }
     }
 }
