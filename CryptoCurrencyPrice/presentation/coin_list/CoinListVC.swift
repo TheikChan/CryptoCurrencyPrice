@@ -185,8 +185,7 @@ extension CoinListVC: UISearchBarDelegate {
     }
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        viewModel?.searchKeyword = searchText
-        cryptoCoinTableView.reloadData()        
+        viewModel?.searchKeyword = searchText      
         if !searchText.isEmpty {
             viewModel?.clearCoin()
             viewModel?.searchCoins(keyword: searchText)
