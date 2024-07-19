@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="CryptoCurrencyPrice" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Cc-rV-761">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Could not load data" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nnr-Ue-GYQ" customClass="TitleLabel" customModule="CryptoCurrencyPrice" customModuleProvider="target">
+                            <rect key="frame" x="16" y="20" width="361" height="20"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="A5L-uO-vV3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="labelColor">
+                                    <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3ES-4a-Xes">
+                            <rect key="frame" x="148.66666666666666" y="44" width="96" height="16"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="16" id="GOF-hs-gnt"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Try Again"/>
+                            <connections>
+                                <action selector="tryAgainPress:" destination="-1" eventType="touchUpInside" id="ass-SS-Tuc"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Nnr-Ue-GYQ" firstAttribute="leading" secondItem="7Cc-rV-761" secondAttribute="leading" constant="16" id="CVV-Mf-nbG"/>
+                        <constraint firstItem="Nnr-Ue-GYQ" firstAttribute="centerX" secondItem="7Cc-rV-761" secondAttribute="centerX" id="Cfy-0o-pGI"/>
+                        <constraint firstItem="3ES-4a-Xes" firstAttribute="centerX" secondItem="7Cc-rV-761" secondAttribute="centerX" id="E2z-8H-Df0"/>
+                        <constraint firstAttribute="trailing" secondItem="Nnr-Ue-GYQ" secondAttribute="trailing" constant="16" id="dBR-gf-TGT"/>
+                        <constraint firstItem="Nnr-Ue-GYQ" firstAttribute="top" secondItem="7Cc-rV-761" secondAttribute="top" constant="20" id="epT-Kn-24F"/>
+                        <constraint firstAttribute="bottom" secondItem="3ES-4a-Xes" secondAttribute="bottom" constant="20" id="gr4-eU-Onl"/>
+                        <constraint firstItem="3ES-4a-Xes" firstAttribute="top" secondItem="Nnr-Ue-GYQ" secondAttribute="bottom" constant="4" id="pKS-7C-8Ft"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="7Cc-rV-761" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="7tE-Xj-FWE"/>
+                <constraint firstAttribute="bottom" secondItem="7Cc-rV-761" secondAttribute="bottom" id="AU9-W4-cin"/>
+                <constraint firstItem="7Cc-rV-761" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bpK-vI-CDQ"/>
+                <constraint firstItem="7Cc-rV-761" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="dpo-kh-m62"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="139.69465648854961" y="-252.11267605633805"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Nnr-Ue-GYQ">
+            <size key="intrinsicContentSize" width="142" height="19.333333333333332"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
