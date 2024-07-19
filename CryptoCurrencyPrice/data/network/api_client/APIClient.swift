@@ -66,7 +66,7 @@ class APIClient {
                 .validate(statusCode:(200...500))
                 .publishDecodable(type: T.self)
                 .value()
-                .mapError{ APIResponseError.init(rawValue: $0.responseCode ?? 400) ?? .networkError(error: $0 as Error) }
+                .mapError{ $0.responseError }
                 .subscribe(on: queue)
                 .receive(on: DispatchQueue.main)
                 .eraseToAnyPublisher()
